@@ -10,6 +10,31 @@ development environment
 1. run `./seed-db` 
 1. Point your browser at http://localhost:3010
 
+## Pure Docker Override
+
+For a non `docker-sync` setup create the following `docker-compose.override.yml` file
+
+```
+version: '3'
+services:
+  # Campaigns micro-service
+  campaigns:
+    volumes:
+      - ./campaigns:/app
+      - /app/node_modules/
+
+  # match service
+  match:
+    volumes:
+      - ./match:/app
+      - /app/node_modules/
+
+  # the federation gateway
+  gateway:
+    volumes:
+      - /app/node_modules/
+      - ./gateway:/app
+```
 
 ## Problems to Solve / Things that can be improved
 
