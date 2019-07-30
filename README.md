@@ -54,3 +54,9 @@ but other scalars cannot so easily be addressed.
 
 At the same time, campaigns created in evoke/rockit will be missing any Match required fields so these rows will
 thrown an error if Match queries the `campaigns` query. 
+
+### Gateway Restarts
+ 
+The gateway [needs to be restarted](https://spectrum.chat/apollo/apollo-federation/federated-schemas-changes-require-gateway-redeploy~4a839c03-4549-43df-975d-a6732c255707) 
+whenever either the `campaigns` or `match` services are updated. 
+
