@@ -1,0 +1,17 @@
+{
+  "campaigns": [
+    {
+      "id": 1,
+      "ws_number": "WS337-2018",
+      "datorama_campaign_name": "FirstCampaign1",
+      "specId": "campaign1"
+    },
+    {
+      "id": 2,
+      "ws_number": "345435",
+      "datorama_campaign_name": "SecondCampaign1",
+      "user_share": true,
+      "specId": "campaign2"
+    }
+  ]
+}

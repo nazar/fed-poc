@@ -1,0 +1,26 @@
+version: "2"
+
+syncs:
+  gql-poc-match:
+    src: './match'
+    sync_excludes_type: 'none'
+    sync_strategy: 'native_osx'
+    sync_excludes: ['Name node_modules']
+    notify_terminal: true
+    monit_enable: true
+
+  gql-poc-campaigns:
+    src: './campaigns'
+    sync_excludes_type: 'none'
+    sync_strategy: 'native_osx'
+    sync_excludes: ['Name node_modules']
+    notify_terminal: true
+    monit_enable: true
+
+  gql-poc-gateway:
+    src: './gateway'
+    sync_excludes_type: 'none'
+    sync_strategy: 'native_osx'
+    sync_excludes: ['Name node_modules']
+    notify_terminal: true
+    monit_enable: true

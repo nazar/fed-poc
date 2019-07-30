@@ -1,0 +1,16 @@
+{
+  "campaigns": [
+    {
+      "name": "first campaign",
+      "flight_start_date": "2018-04-25 04:00:00",
+      "flight_end_date": "2018-05-25 04:00:00",
+      "investment": 500
+    },
+    {
+      "name": "second campaign",
+      "flight_start_date": "2018-05-25 04:00:00",
+      "flight_end_date": "2018-06-25 04:00:00",
+      "investment": 5000
+    }
+  ]
+}

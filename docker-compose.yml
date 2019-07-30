@@ -1,0 +1,56 @@
+version: '3'
+services:
+  # Campaigns micro-service
+  campaigns:
+    build:
+      context: ./campaigns
+    volumes:
+      - /app/node_modules/
+      - gql-poc-campaigns:/app:nocopy
+    depends_on:
+      - db-campaigns
+
+  # canonical campaigns db
+  db-campaigns:
+    image: postgres:11.1-alpine
+    environment:
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=campaigns
+
+  # match service
+  match:
+    build:
+      context: ./match
+    depends_on:
+      - db-match
+    volumes:
+      - /app/node_modules/
+      - gql-poc-match:/app:nocopy
+
+  # match db
+  db-match:
+    image: postgres:11.1-alpine
+    environment:
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=match
+
+  # the federation gateway
+  gateway:
+    build:
+      context: ./gateway
+    depends_on:
+      - campaigns
+      - match
+    volumes:
+      - /app/node_modules/
+      - gql-poc-gateway:/app:nocopy
+    ports: ["3010:4000"]
+
+
+volumes:
+  gql-poc-match:
+    external: true
+  gql-poc-campaigns:
+    external: true
+  gql-poc-gateway:
+    external: true

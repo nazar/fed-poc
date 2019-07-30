@@ -1,0 +1,15 @@
+{
+  "name": "gateway",
+  "main": "gateway.js",
+  "scripts": {
+    "start": "nodemon --watch src src/index.js"
+  },
+  "dependencies": {
+    "@apollo/gateway": "latest",
+    "apollo-server": "latest",
+    "graphql": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}

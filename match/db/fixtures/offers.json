@@ -1,0 +1,8 @@
+{
+  "offers": [
+    {
+      "campaign_id": "campaigns:campaign1",
+      "name": "first offer"
+    }
+  ]
+}
