@@ -60,3 +60,8 @@ thrown an error if Match queries the `campaigns` query.
 The gateway [needs to be restarted](https://spectrum.chat/apollo/apollo-federation/federated-schemas-changes-require-gateway-redeploy~4a839c03-4549-43df-975d-a6732c255707) 
 whenever either the `campaigns` or `match` services are updated. 
 
+### Custom Directives not supported
+
+[This](https://spectrum.chat/apollo/apollo-federation/why-does-buildfederatedschema-ignore-custom-directives~1db147db-8395-4b1e-8ec1-3b687d405cf0) suggests
+that the federation gateway doesn't support custom schemas yet. Match uses a number of custom directives.
+
