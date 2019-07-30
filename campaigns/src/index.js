@@ -17,6 +17,7 @@ Model.knex(knex);
 
 const typeDefs = gql`
   extend type Query {
+    # TODO - this might not work - see Campaign Required field Definitions in main README.md
     campaigns: [Campaign]
   }
   

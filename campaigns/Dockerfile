@@ -7,7 +7,4 @@ RUN yarn install
 
 COPY . /app
 
-RUN yarn migrate:latest
-RUN yarn seed
-
 CMD yarn start
