@@ -59,6 +59,8 @@ thrown an error if Match queries the `campaigns` query.
  
 The gateway [needs to be restarted](https://spectrum.chat/apollo/apollo-federation/federated-schemas-changes-require-gateway-redeploy~4a839c03-4549-43df-975d-a6732c255707) 
 whenever either the `campaigns` or `match` services are updated. 
+[This](https://spectrum.chat/apollo/apollo-federation/handling-availability-and-timing~a5364199-1c5b-40c8-989d-f4cc31a7daf4) is another query
+regarding this.
 
 ### Custom Directives not supported
 
@@ -68,4 +70,8 @@ that the federation gateway doesn't support custom schemas yet. Match uses a num
 ### Authorisations Headers
 
 We need to double check that any `Authorization` headers are available in downstream services. 
+
+### No Subscriptions
+
+Subscriptions are currently not supported via the gateway.
 
