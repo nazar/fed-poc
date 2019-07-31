@@ -65,7 +65,8 @@ regarding this.
 ### Custom Directives not supported
 
 [This](https://spectrum.chat/apollo/apollo-federation/why-does-buildfederatedschema-ignore-custom-directives~1db147db-8395-4b1e-8ec1-3b687d405cf0) suggests
-that the federation gateway doesn't support custom schemas yet. Match uses a number of custom directives.
+that the federation gateway doesn't support custom schemas yet. Match uses a number of custom directives. 
+[Relevant Ticket](https://github.com/apollographql/apollo-feature-requests/issues/145).
 
 ### Authorisations Headers
 
