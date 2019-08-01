@@ -65,8 +65,12 @@ regarding this.
 ### Custom Directives not supported
 
 [This](https://spectrum.chat/apollo/apollo-federation/why-does-buildfederatedschema-ignore-custom-directives~1db147db-8395-4b1e-8ec1-3b687d405cf0) suggests
-that the federation gateway doesn't support custom schemas yet. Match uses a number of custom directives. 
+that the federation gateway doesn't support custom schemas yet. Match uses a number of custom directives and the lack of directive support is a blocker. 
 [Relevant Ticket](https://github.com/apollographql/apollo-feature-requests/issues/145).
+
+Relevant article on [remote schema stiching](https://www.apollographql.com/docs/graphql-tools/schema-stitching/) might be
+a viable alternative until Federated schemas adds support for custom directives (and matures).
+
 
 ### Authorisations Headers
 
