@@ -69,7 +69,10 @@ that the federation gateway doesn't support custom schemas yet. Match uses a num
 [Relevant Ticket](https://github.com/apollographql/apollo-feature-requests/issues/145).
 
 Relevant article on [remote schema stiching](https://www.apollographql.com/docs/graphql-tools/schema-stitching/) might be
-a viable alternative until Federated schemas adds support for custom directives (and matures).
+a viable alternative until Federated schemas adds support for custom directives (and matures). 
+
+[Remote schemas](https://www.apollographql.com/docs/graphql-tools/remote-schemas/) has interesting information on
+using `link` and `makeRemoteExecutableSchema`.
 
 
 ### Authorisations Headers
