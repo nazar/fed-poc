@@ -16,7 +16,7 @@
     "objection": "latest",
     "pg": "latest",
     "graphql-iso-date": "latest",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "winston": "2.4.1",
     "dataloader": "latest",
     "sql-fixtures": "1.0.0",
